@@ -18,10 +18,13 @@
         <button id="submit-btn">Получить погоду</button>
     </div>
     <div class="first-div"></div>
+
+    {% for info in all_info %}
     <div class="weather-widget">
     <h2>Погода в {{ info.city }}</h2>
     <p>Сейчас {{ info.temp }}°C</p>
     <p>Ветер {{ info.wind }} м/с</p>
     </div>
+    {% endfor %}
 </body>
 </html>

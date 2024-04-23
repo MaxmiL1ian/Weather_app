@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from .models import City
 import os
 from dotenv import load_dotenv
 import requests
@@ -9,15 +10,21 @@ def index(request):
     API_KEY = os.getenv('API_KEY')
     API_URL = os.getenv('API_URL')
 
-    res = requests.get(API_URL.format("London",API_KEY)).json()
+    all_cities = []
+    cities = City.objects.all()
 
-    city_info = {
-        'city':'London',
-        'temp': '25',
-        'wind': '15'
-    }
+    for city in cities:
+        res = requests.get(API_URL.format(city,API_KEY)).json()
+
+        city_info = {
+            'city':city.name,
+            'temp': round(res['main']['temp']),
+            'wind': round(res['wind']['speed'])
+        }
+
+        all_cities.append(city_info)
 
     context = {
-        'info':city_info
+        'all_info':all_cities
     }
     return render(request,'Weather/index.html',context)
