@@ -32,3 +32,12 @@ header {
     margin-top: 20px;
     text-align: center;
 }
+    .weather-widget {
+        background-color: #ccc;
+        color: #333;
+        padding: 10px;
+        border-radius: 5px;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+        font-family: Arial, sans-serif;
+        text-align: center;
+}
