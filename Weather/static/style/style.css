@@ -41,3 +41,7 @@ header {
         font-family: Arial, sans-serif;
         text-align: center;
 }
+
+.first-div {
+    margin-bottom: 20px; /* отступ вниз */
+}
