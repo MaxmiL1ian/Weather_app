@@ -13,9 +13,12 @@
         <h1>Погодное приложение</h1>
     </header>
     <div id="city-input">
+        <form action="" method="post">
+        {% csrf_token %}
         <label for="city">Введите город:</label>
-        <input type="text" id="city" name="city">
+         {{ form.name }}
         <button id="submit-btn">Получить погоду</button>
+        </form>
     </div>
     <div class="first-div"></div>
 
