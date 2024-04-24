@@ -1,0 +1,52 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+#city-input {
+    text-align: center;
+    margin-top: 20px;
+}
+#city {
+    padding: 5px;
+    margin-right: 10px;
+}
+#submit-btn {
+    padding: 5px 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+#submit-btn:hover {
+    background-color: #555;
+}
+#weather-output {
+    margin-top: 20px;
+    text-align: center;
+}
+    .weather-widget {
+        background-color: #ccc;
+        color: #333;
+        padding: 10px;
+        border-radius: 5px;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+        font-family: Arial, sans-serif;
+        text-align: center;
+        border: 1px solid #000;
+}
+
+.first-div {
+    margin-bottom: 20px;
+}
+
+.second-div {
+    margin-bottom: 1px;
+}
