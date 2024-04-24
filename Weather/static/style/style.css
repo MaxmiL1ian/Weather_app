@@ -40,8 +40,13 @@ header {
         box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
         font-family: Arial, sans-serif;
         text-align: center;
+        border: 1px solid #000;
 }
 
 .first-div {
-    margin-bottom: 20px; /* отступ вниз */
+    margin-bottom: 20px;
+}
+
+.second-div {
+    margin-bottom: 1px;
 }

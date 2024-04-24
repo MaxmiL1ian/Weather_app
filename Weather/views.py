@@ -15,7 +15,7 @@ def index(request):
     cities = City.objects.all()
 
     for city in cities:
-        res = requests.get(API_URL.format(city,API_KEY)).json()
+        res = requests.get(API_URL.format(city.name,API_KEY)).json()
 
         city_info = {
             'city':city.name,

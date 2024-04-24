@@ -21,10 +21,11 @@
 
     {% for info in all_info %}
     <div class="weather-widget">
-    <h2>Погода в {{ info.city }}</h2>
+    <h2>{{ info.city }}</h2>
     <p>Сейчас {{ info.temp }}°C</p>
     <p>Ветер {{ info.wind }} м/с</p>
     </div>
+        <div class="second-div"></div>
     {% endfor %}
 </body>
 </html>
